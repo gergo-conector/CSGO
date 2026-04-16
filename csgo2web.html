@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike Történelem | 1.6 - CS2</title>
+    <style>
+        /* --- CSS RÉSZ (STÍLUS) --- */
+        
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0f12; /* Mélysötét szürke/fekete */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Fejléc design */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid #de9b35; /* Klasszikus CS narancssárga */
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #de9b35;
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.9);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 20px;
+            border-radius: 5px;
+        }
+
+        /* Navigációs menü */
+        nav {
+            background-color: #1a1d23;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #de9b35;
+        }
+
+        /* Tartalmi elrendezés */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .game-section {
+            display: flex;
+            align-items: center;
+            background: #161a1f;
+            margin-bottom: 60px;
+            border-radius: 12px;
+            overflow: hidden;
+            border-left: 5px solid #de9b35;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* Minden második szekció megfordítása */
+        .game-section.alt {
+            flex-direction: row-reverse;
+            border-left: none;
+            border-right: 5px solid #4a90e2; /* CS:S/CSGO kék beütés */
+        }
+
+        .image-box {
+            flex: 1;
+            min-height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .text-box h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: #de9b35;
+        }
+
+        .game-section.alt h2 {
+            color: #4a90e2;
+        }
+
+        /* Lábléc */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #090b0e;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+
+        /* Reszponzivitás (mobilra) */
+        @media (max-width: 850px) {
+            .game-section, .game-section.alt {
+                flex-direction: column;
+            }
+            .image-box {
+                width: 100%;
+                height: 250px;
+            }
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Counter-Strike</h1>
+        <p>A taktikai FPS-ek királyának története</p>
+    </header>
+
+    <nav>
+        <a href="#v16">CS 1.6</a>
+        <a href="#css">Source</a>
+        <a href="#csgo">CS:GO</a>
+        <a href="#cs2">CS2</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="v16" class="game-section">
+            <div class="image-box" style="background-image: url('https://via.placeholder.com/600x400/222/de9b35?text=Counter-Strike+1.6');"></div>
+			<div>
+			<img width="450px" height="310px" src="https://ih1.redbubble.net/image.1123456681.4226/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg">
+			</div>
+            <div class="text-box">
+                <h2>The Legend: CS 1.6</h2>
+                <p>1999-ben indult útjára mint Half-Life kiegészítő. Egyszerű, gyors és hihetetlenül precíz játékmenete miatt a mai napig az egyik legmeghatározóbb esport játék marad. Olyan pályákat köszönhetünk neki, mint a de_dust2 vagy a de_inferno eredeti változatai.</p>
+				
+            </div>
+        </section>
+
+        <section id="css" class="game-section alt">
+            <div class="image-box" style="background-image: url('https://via.placeholder.com/600x400/222/4a90e2?text=CS+Source');"></div>
+            <div class="text-box">
+                <h2>Új korszak: CS Source</h2>
+                <p>2004-ben a Source motor elhozta a fizikát és a modernebb grafikát. Bár a váltás megosztotta a közösséget, a "ragdoll" effektek és a rombolható hordók új mélységet adtak a játéknak. Itt születtek meg a legnépszerűbb szörf (surf) és zombi módok.</p>
+            </div>.
+			<div>
+			<img width="450px" height="350px" src="https://images.steamusercontent.com/ugc/1832401867004681770/D18F482C9CCA2CB6F59701A3690F768D6FC7036D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+        </section>
+
+        <section id="csgo" class="game-section">
+            <div class="image-box" style="background-image: url('https://via.placeholder.com/600x400/222/de9b35?text=CS+Global+Offensive');"></div>
+			<div>
+			<img width="420px" height="250px" src="https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6">
+			</div>
+            <div class="text-box">
+                <h2>A csúcs: CS:GO</h2>
+                <p>2012-ben a Global Offensive egyesítette a közösséget. A skinek megjelenése 2013-ban (Arms Deal update) örökre megváltoztatta a játékipart. Több milliós nézettségű Major tornák és egy hatalmas gazdasági ökoszisztéma épült köré.</p>
+            </div>
+			<div>
+        </section>
+
+        <section id="cs2" class="game-section alt">
+            <div class="image-box" style="background-image: url('https://via.placeholder.com/600x400/222/4a90e2?text=Counter-Strike+2');"></div>
+            <div class="text-box">
+                <h2>A jele:CS2</h2>
+				<p>2023-ban a Source 2 motorral minden megváltozott.A füstgránátok már reagálnak a lövésekre,a grafika pedig a legmodernebb szintre lépett. A sub-tick rendszerrel a Valve célja a legpontosabb online élmény megteremtése</p>
+
+			</div>
+			<div>
+			<img width="420px" height="250px" src="https://www.csgoroll.com/blog/content/images/size/w2000/2025/01/counter-strike-2-pc-game-steam-cover.jpg">
+			</div>
+		</section>
+		
+		<footer>
+			<p> 2024 Counter-Srike Evolúció Projekt</p>
+		</footer>
+				
+     
+
+</body>
+</html>
